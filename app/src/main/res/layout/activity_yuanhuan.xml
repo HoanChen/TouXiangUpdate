@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_blue_dark">
+
+        <com.tiqiuzhe.touxiangupdate.view.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/liuyifei"
+            app:border_color="@android:color/holo_red_dark" />
+
+        <com.tiqiuzhe.touxiangupdate.view.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom|right"
+            android:src="@mipmap/liuyifei"
+            app:border_width="5dp"
+            android:rotation="-45"
+            app:border_color="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+
+        <com.tiqiuzhe.touxiangupdate.view.RoundProgressBar
+            android:id="@+id/rpb_detail_up"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:rotation="-45"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+
+        <com.tiqiuzhe.touxiangupdate.view.RoundProgressBar
+            android:id="@+id/rpb_detail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

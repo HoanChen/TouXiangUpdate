@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/anim/slide_out_to_bottom.xml",
+        "source": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/anim/slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/anim/slide_out_to_bottom.xml",
+        "source": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/anim/slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/anim/slide_out_to_top.xml",
+        "source": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/anim/slide_out_to_top.xml"
+    },
+    {
+        "merged": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/anim/slide_in_from_top.xml",
+        "source": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/anim/slide_in_from_top.xml"
+    },
+    {
+        "merged": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/anim/slide_in_from_top.xml",
+        "source": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/anim/slide_in_from_top.xml"
+    },
+    {
+        "merged": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/anim/slide_in_from_bottom.xml",
+        "source": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/anim/slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/anim/slide_in_from_bottom.xml",
+        "source": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/anim/slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/anim/slide_out_to_top.xml",
+        "source": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/anim/slide_out_to_top.xml"
+    }
+]

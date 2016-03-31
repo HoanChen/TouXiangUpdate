@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--<  com.tiqiuzhe.touxiangupdate.view.OverScrollView 弹簧效果 >-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.shanping.shimmer.ShimmerTextView
+                android:id="@+id/tv_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:text="FragmentTabHost"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_30"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_lunbotu"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="轮播图slide"
+                    android:textSize="@dimen/textsize_20"/>
+                <!--<TextView-->
+                <!--android:text="轮播图banner"-->
+                <!--android:id="@+id/tv_lunbotu_banner"-->
+                <!--style="@style/text_style"-->
+                <!--android:background="@android:color/holo_green_dark"/>-->
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_yindaoye"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="引导VFlipper"
+                    android:textSize="@dimen/textsize_20"/>
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_yindaoye1"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_purple"
+                    android:text="引导页全图"
+                    android:textSize="@dimen/textsize_20"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_avatar"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="头像设置"
+                    android:textSize="@dimen/textsize_20"/>
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_yuanhuan"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="圆环头像设置"
+                    android:textSize="@dimen/textsize_20"/>
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_explosion"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="爆炸效果"
+                    android:textSize="@dimen/textsize_20"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_change"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_purple"
+                    android:hint="监听文本抖动"
+                    android:textSize="@dimen/textsize_20"/>
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_more_click"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_green_light"
+                    android:text="多次点击(谷歌大牛)"
+                    android:textSize="@dimen/textsize_20"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_tanchuang"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="弹出弹窗"
+                    android:textSize="@dimen/textsize_20"/>
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_dialog"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_orange_dark"
+                    android:text="弹出加载框"
+                    android:textSize="@dimen/textsize_20"/>
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_shuaxin"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="下拉刷新"
+                    android:textSize="@dimen/textsize_20"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.tiqiuzhe.touxiangupdate.view.SlideShowView
+                android:id="@+id/viewPager_menu"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@mipmap/img_red"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="站内公告 : "
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"/>
+
+                <TextSwitcher
+                    android:id="@+id/switcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="AAA"
+                    android:textColor="@color/tv_notice_color"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#eeeeee">
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/shimmer_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="HELLO WORLD"
+                    android:textColor="#000000"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="刘亦菲"/>
+
+                <Button
+                    android:id="@+id/bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Button"/>
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:background="#E0EEE0"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

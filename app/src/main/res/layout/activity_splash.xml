@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_splash_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+     <ImageView
+        android:id="@+id/iv_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/guide0"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

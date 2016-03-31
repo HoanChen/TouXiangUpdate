@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+
+    <!-- 二维码的背景颜色 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+
+    <!-- 侧滑按钮背景 -->
+    <color name="menu_default">#2A2A2A</color>
+    <color name="menu_perssed">#50504F</color>
+    <!-- 文字黑色 -->
+    <color name="text_black">#333333</color>
+    <!-- 文字灰色 -->
+    <color name="text_hui">#999999</color>
+    <!-- 文字灰色 -->
+    <color name="text_jin">#D2A176</color>
+    <!-- 头像灰色边缘线 -->
+    <color name="iv_border_hui">#DEDEDE</color>
+
+    <!-- 站内公告循环字体颜色 -->
+    <color name="tv_notice_color">#66b4f4</color>
+    <!-- 输入框光标蓝色 -->
+    <color name="et_cursor">#69B5F4</color>
+    <!-- 圆环颜色 -->
+    <color name="text_danjin">#F6ECE4</color>
+    <!-- 上面圆环颜色 -->
+    <color name="text_danhong">#ec7b7b</color>
+</resources>
