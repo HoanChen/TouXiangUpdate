@@ -14,5 +14,13 @@
     {
         "merged": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_vertical.xml",
         "source": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "/xpchen/project/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_horizontal.xml",
+        "source": "/xpchen/project/TouXiangUpdate/library/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "/xpchen/project/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_vertical.xml",
+        "source": "/xpchen/project/TouXiangUpdate/library/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml"
     }
 ]

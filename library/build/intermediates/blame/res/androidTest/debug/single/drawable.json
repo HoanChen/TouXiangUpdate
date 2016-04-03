@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/xpchen/project/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
+        "source": "/xpchen/project/TouXiangUpdate/library/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
+    },
+    {
         "merged": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
         "source": "/xpchen/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
     },
@@ -10,6 +14,10 @@
     {
         "merged": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
         "source": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
+    },
+    {
+        "merged": "/xpchen/project/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
+        "source": "/xpchen/project/TouXiangUpdate/library/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
     },
     {
         "merged": "/Users/android/Downloads/workspace/TouXiangUpdate/library/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
