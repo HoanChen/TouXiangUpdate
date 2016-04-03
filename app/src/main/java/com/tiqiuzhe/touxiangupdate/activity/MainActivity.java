@@ -269,7 +269,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 break;
 
 
-            case R.id.tv_avatar://头像  －－－－－及弹出弹窗
+            case R.id.tv_avatar://头像 及弹出弹窗
                 startActivity(new Intent(this, TouXiangActivity.class));
                 break;
 
