@@ -125,9 +125,17 @@
                 <com.shanping.shimmer.ShimmerTextView
                     android:id="@+id/tv_shuaxin"
                     style="@style/text_style"
-                    android:background="@android:color/holo_blue_bright"
+                    android:background="@android:color/holo_red_dark"
                     android:text="下拉刷新"
                     android:textSize="@dimen/textsize_20"/>
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_jingdong_shuaxin"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="京东刷新"
+                    android:textSize="@dimen/textsize_20"/>
+
 
             </LinearLayout>
 

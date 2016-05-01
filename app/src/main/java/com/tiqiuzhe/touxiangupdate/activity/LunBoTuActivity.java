@@ -56,6 +56,11 @@ public class LunBoTuActivity extends AppCompatActivity implements ViewFactory{
     @Bind(R.id.ll)
     LinearLayout ll;
 
+//    @Bind(R.id.seekbar)
+//    SeekBar sb;
+//    @Bind(R.id.firstview)
+//    FirstSetpView fsv;
+
 
     private String[] imageUrls = {"http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg",
             "http://pic30.nipic.com/20130626/8174275_085522448172_2.jpg",
@@ -96,7 +101,31 @@ public class LunBoTuActivity extends AppCompatActivity implements ViewFactory{
         initShimmer();
 
         initBadgeView();
+
+//        initListener();
     }
+
+//    private void initListener() {
+//        sb.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                float currentProgress = (float) seekBar.getProgress() / (float) seekBar.getMax();
+//                fsv.setCurrentProgress(currentProgress);
+//                fsv.invalidate();
+//            }
+//        });
+//    }
 
     private void initBadgeView() {
 
@@ -108,6 +137,22 @@ public class LunBoTuActivity extends AppCompatActivity implements ViewFactory{
 //        6. setTypeface() --> 设置显示的字体
 //        7. setShadowLayer() --> 设置字体的阴影
 //  注意   8.图片貌似不能使用badgeview
+
+        //        BadgeView badgeView = new BadgeView(this);
+        //        badgeView.setTargetView(rl_my_message);
+        //        badgeView.setBadgeGravity(Gravity.TOP | Gravity.RIGHT);
+        //        //        badgeView.setBackgroundColor(Color.RED);
+        //        //        badgeView.setBadgeMargin(-1);
+        //        //        badgeView.setTextColor(Color.BLACK);
+        //        badgeView.setBadgeCount(0);
+
+        //        badgeView.setBadgeGravity(Gravity.TOP | Gravity.RIGHT);
+        //        badgeView.setBadgeGravity(Gravity.TOP | Gravity.LEFT);
+        //        badgeView.setTypeface(Typeface.create(Typeface.SANS_SERIF,
+        //                                              Typeface.ITALIC));
+        //        badgeView.setShadowLayer(2, -1, -1, Color.GREEN);
+
+        //        badgeView.setBadgeCount(me.getTeamarray().size());
 
         BadgeView badgeView = new BadgeView(this);
         badgeView.setTargetView(tv);

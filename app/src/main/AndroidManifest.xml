@@ -45,6 +45,8 @@
         <activity android:name=".activity.ShuaXinActivity"/>
          <!--爆炸界面-->
         <activity android:name=".activity.ExplosionActivity"/>
+        <!--京东刷新界面-->
+        <activity android:name=".activity.JDShuaXinActivity"/>
 
 
     </application>
