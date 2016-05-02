@@ -16,6 +16,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher.ViewFactory;
@@ -26,6 +28,7 @@ import com.shanping.shimmer.ShimmerTextView;
 import com.tiqiuzhe.touxiangupdate.R;
 import com.tiqiuzhe.touxiangupdate.view.SlideShowView;
 import com.tiqiuzhe.touxiangupdate.view.SlideShowView.OnItemClickListener;
+import com.tiqiuzhe.touxiangupdate.view.jd.FirstSetpView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -56,10 +59,10 @@ public class LunBoTuActivity extends AppCompatActivity implements ViewFactory{
     @Bind(R.id.ll)
     LinearLayout ll;
 
-//    @Bind(R.id.seekbar)
-//    SeekBar sb;
-//    @Bind(R.id.firstview)
-//    FirstSetpView fsv;
+    @Bind(R.id.seekbar)
+    SeekBar sb;
+    @Bind(R.id.firstview)
+    FirstSetpView fsv;
 
 
     private String[] imageUrls = {"http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg",
@@ -102,30 +105,30 @@ public class LunBoTuActivity extends AppCompatActivity implements ViewFactory{
 
         initBadgeView();
 
-//        initListener();
+        initListener();
     }
 
-//    private void initListener() {
-//        sb.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
-//
-//            @Override
-//            public void onStopTrackingTouch(SeekBar seekBar) {
-//
-//            }
-//
-//            @Override
-//            public void onStartTrackingTouch(SeekBar seekBar) {
-//
-//            }
-//
-//            @Override
-//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//                float currentProgress = (float) seekBar.getProgress() / (float) seekBar.getMax();
-//                fsv.setCurrentProgress(currentProgress);
-//                fsv.invalidate();
-//            }
-//        });
-//    }
+    private void initListener() {
+        sb.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                float currentProgress = (float) seekBar.getProgress() / (float) seekBar.getMax();
+                fsv.setCurrentProgress(currentProgress);
+                fsv.invalidate();
+            }
+        });
+    }
 
     private void initBadgeView() {
 

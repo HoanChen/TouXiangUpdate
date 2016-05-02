@@ -9,25 +9,24 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="10dp"
+        android:background="@android:color/holo_blue_dark"
         android:orientation="horizontal"
-        android:background="@android:color/holo_blue_dark">
+        android:padding="10dp">
 
         <com.tiqiuzhe.touxiangupdate.view.CircleImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@mipmap/liuyifei"
-            app:border_color="@android:color/holo_red_dark" />
+            app:border_color="@android:color/holo_red_dark"/>
 
         <com.tiqiuzhe.touxiangupdate.view.CircleImageView
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:layout_gravity="bottom|right"
-            android:src="@mipmap/liuyifei"
-            app:border_width="5dp"
             android:rotation="-45"
-            app:border_color="@android:color/holo_orange_light" />
+            android:src="@mipmap/liuyifei"
+            app:border_color="@android:color/holo_orange_light"
+            app:border_width="3dp"/>
 
     </LinearLayout>
 
@@ -35,26 +34,66 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="10dp"
+        android:background="@android:color/white"
         android:orientation="horizontal"
-        >
+        android:padding="10dp">
 
         <com.tiqiuzhe.touxiangupdate.view.RoundProgressBar
             android:id="@+id/rpb_detail_up"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_vertical"
-            android:rotation="-45"
-            android:layout_width="160dp"
-            android:layout_height="160dp" />
+            android:rotation="-45"/>
 
         <com.tiqiuzhe.touxiangupdate.view.RoundProgressBar
             android:id="@+id/rpb_detail"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="20dp"
-            android:layout_centerVertical="true"/>
+            android:layout_marginLeft="20dp"/>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:background="#294d70">
+
+        <CheckBox
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/text_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@android:color/black"/>
+
+        <CheckBox
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/text_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@android:color/black"/>
+
+
+        <CheckBox
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/text_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="刘亦菲"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
 </LinearLayout>
