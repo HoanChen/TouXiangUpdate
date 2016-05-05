@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--app:color_checked="@color/colorAccent"-->
+        <com.tiqiuzhe.touxiangupdate.view.checkbox.SmoothCheckBox
+            android:id="@+id/scb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            app:color_checked="#00ff00"
+            app:stroke_width="1dp"/>
+
+        <!--app:color_checked="#447eeb"-->
+        <com.tiqiuzhe.touxiangupdate.view.checkbox.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            app:color_checked="#ff0000"
+            app:stroke_width="1dp"/>
+
+        <!--app:color_checked="#149A45"-->
+        <com.tiqiuzhe.touxiangupdate.view.checkbox.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            app:color_checked="#149A45"
+            app:stroke_width="1dp"/>
+
+        <com.tiqiuzhe.touxiangupdate.view.checkbox.SmoothCheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            app:color_checked="#0000ff"
+            app:stroke_width="1dp"/>
+
+        <!--DFDFDF         FB4846  -->
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"/>
+
+</LinearLayout>

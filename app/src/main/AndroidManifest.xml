@@ -28,7 +28,6 @@
         <!-- FragmentTabHost界面-->
         <activity android:name=".activity.MainTabActivity"/>
 
-
         <!-- 头像设置-->
         <activity android:name=".activity.TouXiangActivity"/>
         <!-- 圆环头像设置-->
@@ -47,6 +46,8 @@
         <activity android:name=".activity.ExplosionActivity"/>
         <!--京东刷新界面-->
         <activity android:name=".activity.JDShuaXinActivity"/>
+        <!--CheckBox界面-->
+        <activity android:name=".activity.CheckBoxActivity"/>
 
 
     </application>
