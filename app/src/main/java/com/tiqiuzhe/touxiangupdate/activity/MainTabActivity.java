@@ -51,9 +51,6 @@ public class MainTabActivity extends FragmentActivity {
      */
     private void initView(){
 
-
-
-
         //实例化布局对象
         layoutInflater = LayoutInflater.from(this);
 

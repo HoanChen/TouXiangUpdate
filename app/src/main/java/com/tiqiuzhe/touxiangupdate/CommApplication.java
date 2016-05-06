@@ -5,9 +5,12 @@ import android.content.Context;
 import android.os.Environment;
 import android.util.DisplayMetrics;
 
+import com.tiqiuzhe.touxiangupdate.bean.LifeItemData;
 import com.tiqiuzhe.touxiangupdate.utils.ImageLoaderUtils;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * ============================================================================ =======
@@ -89,5 +92,16 @@ public class CommApplication extends Application {
 		// JPushManager.newInstence(context).setAlias("");
 		// JPushManager.newInstence(context).stopJPush();
 	}
+
+	public static List<LifeItemData> getPos() {
+		return pos;
+	}
+
+	public static void setPos(List<LifeItemData> pos) {
+		CommApplication.pos = pos;
+	}
+
+	public static List<LifeItemData> pos=new ArrayList<LifeItemData>();
+
 
 }

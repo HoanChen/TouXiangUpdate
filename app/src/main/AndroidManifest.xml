@@ -48,6 +48,8 @@
         <activity android:name=".activity.JDShuaXinActivity"/>
         <!--CheckBox界面-->
         <activity android:name=".activity.CheckBoxActivity"/>
+        <!--编辑生活界面-->
+        <activity android:name=".activity.LifeAddActivity"/>
 
 
     </application>
