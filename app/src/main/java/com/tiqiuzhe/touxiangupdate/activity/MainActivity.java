@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
@@ -27,7 +28,10 @@ import com.shanping.shimmer.ShimmerTextView;
 import com.tiqiuzhe.touxiangupdate.R;
 import com.tiqiuzhe.touxiangupdate.dialog.AlertDialog;
 import com.tiqiuzhe.touxiangupdate.utils.LoadingDialog;
+import com.tiqiuzhe.touxiangupdate.view.popupwindow.SelectTextPopupWindow;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -84,6 +88,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @Bind(R.id.tv_checkbox)
     ShimmerTextView tv_checkbox;
 
+    @Bind(R.id.tv_ios_wheel)
+    ShimmerTextView tv_ios_wheel;
+
 
     private Shimmer s;
     private Dialog dialog;
@@ -93,6 +100,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     Timer    timer = new Timer();
 
     private long[] mHints = new long[3];//初始全部为0
+    private List<String> mDatas;
+    private long mExitTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,6 +118,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        timer.cancel();
+        timer=null;
+    }
 
     private void initTime1() {
         // 定义Handler
@@ -253,7 +269,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @OnClick({R.id.tv_fragment,R.id.tv_avatar,R.id.tv_tanchuang,R.id.tv_yuanhuan,
             R.id.tv_lunbotu,R.id.tv_yindaoye,R.id.tv_yindaoye1,R.id.et_change,
             R.id.tv_shuaxin,R.id. tv_dialog,R.id.tv_more_click,R.id.tv_explosion,
-            R.id.tv_jingdong_shuaxin,R.id.tv_checkbox})
+            R.id.tv_jingdong_shuaxin,R.id.tv_checkbox,R.id.tv_ios_wheel})
     public void onClick(View v) {
         switch (v.getId()) {
 
@@ -315,6 +331,17 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
             case R.id.tv_checkbox:
                 startActivity(new Intent(this, CheckBoxActivity.class));
+                break;
+
+            case R.id.tv_ios_wheel:
+                mDatas = new ArrayList<>();
+                for (int i = 100; i <= 220; i++) {
+                    mDatas.add(String.format("%dcm", i));
+                }
+                SelectTextPopupWindow heightPopupWindow = new SelectTextPopupWindow(MainActivity.this);
+                heightPopupWindow.setEditText(tv_ios_wheel);
+                heightPopupWindow.setDateList(mDatas,75);
+                heightPopupWindow.show();
                 break;
         }
     }
@@ -421,5 +448,19 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         }).show();
     }
 
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
+            if ((System.currentTimeMillis() - mExitTime) > 2000) {
+                Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+                mExitTime = System.currentTimeMillis();
+
+            } else {
+                finish();
+            }
+            return true;
+        }
+        return super.dispatchKeyEvent(event);
+    }
 
 }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/white"
+        >
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:text="取消"
+            />
+        <TextView
+            android:id="@+id/tv_determine"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            />
+    </RelativeLayout>
+    <com.tiqiuzhe.touxiangupdate.view.RecyclerWheelView.RecycleWheelView
+        android:id="@+id/rwv_select"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ffffff"
+        android:overScrollMode="never"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

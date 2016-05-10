@@ -34,4 +34,7 @@
     <color name="text_danjin">#F6ECE4</color>
     <!-- 上面圆环颜色 -->
     <color name="text_danhong">#ec7b7b</color>
+
+    <color name="blue">#00aade</color>
+    <color name="bg_popup">#F21F3552</color>
 </resources>

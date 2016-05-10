@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils.TruncateAt;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.AnimationUtils;
@@ -20,16 +21,19 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewSwitcher.ViewFactory;
 
 import com.jauker.widget.BadgeView;
 import com.shanping.shimmer.Shimmer;
 import com.shanping.shimmer.ShimmerTextView;
 import com.tiqiuzhe.touxiangupdate.R;
+import com.tiqiuzhe.touxiangupdate.view.AutoScrollTextView;
 import com.tiqiuzhe.touxiangupdate.view.SlideShowView;
 import com.tiqiuzhe.touxiangupdate.view.SlideShowView.OnItemClickListener;
 import com.tiqiuzhe.touxiangupdate.view.jd.FirstSetpView;
 
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -63,7 +67,9 @@ public class LunBoTuActivity extends AppCompatActivity implements ViewFactory{
     SeekBar sb;
     @Bind(R.id.firstview)
     FirstSetpView fsv;
-
+    private ArrayList<String> titleList = new ArrayList<String>();
+    @Bind(R.id.text_switcher)
+    AutoScrollTextView text_switcher;
 
     private String[] imageUrls = {"http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg",
             "http://pic30.nipic.com/20130626/8174275_085522448172_2.jpg",
@@ -106,6 +112,23 @@ public class LunBoTuActivity extends AppCompatActivity implements ViewFactory{
         initBadgeView();
 
         initListener();
+
+        init();
+    }
+
+    private void init() {
+        // 制造测试数据
+        for (int i = 0; i < 15; i++) {
+            titleList.add("ABC position : " + i);
+        }
+        text_switcher.setTextList(titleList);
+        text_switcher.setOnItemClickListener(new AutoScrollTextView.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Log.d("", "position : " + position);
+                Toast.makeText(LunBoTuActivity.this, "position : " + position, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void initListener() {
@@ -301,4 +324,17 @@ public class LunBoTuActivity extends AppCompatActivity implements ViewFactory{
 
         }
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        text_switcher.startAutoScroll();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        text_switcher.stopAutoScroll();
+    }
+
 }

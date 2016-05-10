@@ -30,4 +30,24 @@
         <attr name="color_unchecked_stroke" format="color"/>
     </declare-styleable>
 
+    <declare-styleable name="autoScrollHeight">
+        <attr name="textSize_Scroll" format="dimension"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="scrollDuration" format="integer"/>
+        <attr name="textColor_Scroll" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecycleWheelView">
+        <attr name="recycleWheelDirection" format="enum">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+        <attr name="recycleWheelLineColor" format="color"/>
+        <attr name="recycleWheelLineThickness" format="dimension"/>
+        <attr name="recycleWheelLineDrawable" format="reference"/>
+        <attr name="recycleWheelLinePadding" format="dimension"/>
+    </declare-styleable>
+
+
 </resources>

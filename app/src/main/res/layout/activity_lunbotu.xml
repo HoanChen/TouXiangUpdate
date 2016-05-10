@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -104,9 +107,9 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
 
                 <SeekBar
                     android:id="@+id/seekbar"
@@ -120,6 +123,18 @@
                     android:layout_below="@+id/seekbar"
                     android:layout_centerInParent="true"/>
             </RelativeLayout>
+
+            <com.tiqiuzhe.touxiangupdate.view.AutoScrollTextView
+                android:id="@+id/text_switcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                app:animDuration="300"
+                app:padding="10dp"
+                app:scrollDuration="3000"
+                app:textColor_Scroll="#000000"
+                app:textSize_Scroll="8sp"/>
 
         </LinearLayout>
     </ScrollView>
