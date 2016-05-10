@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @Bind(R.id.tv_fragment)
     ShimmerTextView tv_fragment;
 
-
     @Bind(R.id.tv_avatar)
     ShimmerTextView tv_avatar;
 
@@ -91,13 +90,16 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @Bind(R.id.tv_ios_wheel)
     ShimmerTextView tv_ios_wheel;
 
+    @Bind(R.id.tv_multiple)
+    ShimmerTextView tv_multiple;
+
 
     private Shimmer s;
     private Dialog dialog;
     private BadgeView badgeView;
     private int i=1;
 
-    Timer    timer = new Timer();
+    Timer timer = new Timer();
 
     private long[] mHints = new long[3];//初始全部为0
     private List<String> mDatas;
@@ -123,7 +125,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         super.onPause();
 
         timer.cancel();
-        timer=null;
+        timer.purge();
+        if (timer!=null){
+            timer = new Timer();
+        }
     }
 
     private void initTime1() {
@@ -269,7 +274,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @OnClick({R.id.tv_fragment,R.id.tv_avatar,R.id.tv_tanchuang,R.id.tv_yuanhuan,
             R.id.tv_lunbotu,R.id.tv_yindaoye,R.id.tv_yindaoye1,R.id.et_change,
             R.id.tv_shuaxin,R.id. tv_dialog,R.id.tv_more_click,R.id.tv_explosion,
-            R.id.tv_jingdong_shuaxin,R.id.tv_checkbox,R.id.tv_ios_wheel})
+            R.id.tv_jingdong_shuaxin,R.id.tv_checkbox,R.id.tv_ios_wheel,
+            R.id.tv_multiple})
     public void onClick(View v) {
         switch (v.getId()) {
 
@@ -325,15 +331,19 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 shake();
                 break;
 
-            case R.id.tv_more_click:
+            case R.id.tv_more_click://多次点击
                 clickMore();
                 break;
 
-            case R.id.tv_checkbox:
+            case R.id.tv_checkbox://自定义 CheckBox
                 startActivity(new Intent(this, CheckBoxActivity.class));
                 break;
 
-            case R.id.tv_ios_wheel:
+            case R.id.tv_multiple://多选 CheckBox
+                startActivity(new Intent(this, MoreCheckBoxActivity.class));
+                break;
+
+            case R.id.tv_ios_wheel://仿ios  滚轮
                 mDatas = new ArrayList<>();
                 for (int i = 100; i <= 220; i++) {
                     mDatas.add(String.format("%dcm", i));

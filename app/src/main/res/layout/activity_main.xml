@@ -149,8 +149,16 @@
                     android:id="@+id/tv_checkbox"
                     style="@style/text_style"
                     android:background="@android:color/holo_green_light"
-                    android:text="自定义Checkbox"
+                    android:text="自定Checkbox"
                     android:textSize="@dimen/textsize_20"/>
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_multiple"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_blue_bright"
+                    android:text="多选Checkbox"
+                    android:textSize="@dimen/textsize_20"/>
+
 
                 <com.shanping.shimmer.ShimmerTextView
                     android:id="@+id/tv_ios_wheel"
