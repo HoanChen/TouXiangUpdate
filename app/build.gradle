@@ -33,4 +33,5 @@ dependencies {
     compile files('libs/shimmer.jar')
     compile files('libs/badgeview.jar')
     compile files('libs/Ad_Android_SDK.jar')
+    compile files('libs/picasso-2.4.0.jar')
 }
