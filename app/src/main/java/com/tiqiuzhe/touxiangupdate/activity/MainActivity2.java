@@ -188,6 +188,35 @@ public class MainActivity2 extends AppCompatActivity{
 		}
 	}
 
+	 initImageLoader();
+
+	 @SuppressWarnings("deprecation")
+    private void initImageLoader() {
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
+                this)
+                .memoryCacheExtraOptions(480, 800)
+                        // default = device screen dimensions
+                .threadPoolSize(3)
+                        // default
+                .threadPriority(Thread.NORM_PRIORITY - 1)
+                        // default
+                .tasksProcessingOrder(QueueProcessingType.FIFO)
+                        // default
+                .denyCacheImageMultipleSizesInMemory()
+                .memoryCache(new LruMemoryCache(2 * 1024 * 1024))
+                .memoryCacheSize(2 * 1024 * 1024).memoryCacheSizePercentage(13) // default
+                .discCacheSize(50 * 1024 * 1024) // 缓冲大小
+                .discCacheFileCount(100) // 缓冲文件数目
+                .discCacheFileNameGenerator(new HashCodeFileNameGenerator()) // default
+                .imageDownloader(new BaseImageDownloader(this)) // default
+                .defaultDisplayImageOptions(DisplayImageOptions.createSimple()) // default
+                .writeDebugLogs().build();
+
+        // 2.单例ImageLoader类的初始化
+        ImageLoader imageLoader = ImageLoader.getInstance();
+        imageLoader.init(config);
+    }
+
 
         * **/
 

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Environment;
 import android.util.DisplayMetrics;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.tiqiuzhe.touxiangupdate.bean.LifeItemData;
 import com.tiqiuzhe.touxiangupdate.utils.ImageLoaderUtils;
 
@@ -46,6 +47,8 @@ public class CommApplication extends Application {
 		displayMetrics = getResources().getDisplayMetrics();
 		initCacheDirPath();
 		initImageLoader();
+		//初始化
+		Fresco.initialize(getApplicationContext());
 	}
 
 	/**

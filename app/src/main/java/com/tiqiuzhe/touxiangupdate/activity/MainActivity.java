@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @Bind(R.id.tv_multiple)
     ShimmerTextView tv_multiple;
 
+    @Bind(R.id.tv_picture)
+    ShimmerTextView tv_picture;
+
 
     private Shimmer s;
     private Dialog dialog;
@@ -124,11 +127,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     protected void onPause() {
         super.onPause();
 
-        timer.cancel();
-        timer.purge();
-        if (timer!=null){
-            timer = new Timer();
-        }
+//        timer.cancel();
+//        timer.purge();
+//        if (timer!=null){
+//            timer = new Timer();
+//        }
     }
 
     private void initTime1() {
@@ -139,7 +142,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 //handler处理消息
-                if(msg.what<100){
+                if(msg.what<10){
                     badgeView.setBadgeCount(msg.what);
                 }else{
                     //在handler里可以更改UI组件
@@ -275,7 +278,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             R.id.tv_lunbotu,R.id.tv_yindaoye,R.id.tv_yindaoye1,R.id.et_change,
             R.id.tv_shuaxin,R.id. tv_dialog,R.id.tv_more_click,R.id.tv_explosion,
             R.id.tv_jingdong_shuaxin,R.id.tv_checkbox,R.id.tv_ios_wheel,
-            R.id.tv_multiple})
+            R.id.tv_multiple,R.id.tv_picture})
     public void onClick(View v) {
         switch (v.getId()) {
 
@@ -352,6 +355,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 heightPopupWindow.setEditText(tv_ios_wheel);
                 heightPopupWindow.setDateList(mDatas,75);
                 heightPopupWindow.show();
+                break;
+
+            case R.id.tv_picture:
+                startActivity(new Intent(this, PictureActivity.class));
                 break;
         }
     }

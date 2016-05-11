@@ -169,6 +169,20 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_picture"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="图片框架"
+                    android:textSize="@dimen/textsize_20"/>
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
