@@ -181,6 +181,13 @@
                     android:text="图片框架"
                     android:textSize="@dimen/textsize_20"/>
 
+                <com.shanping.shimmer.ShimmerTextView
+                    android:id="@+id/tv_taobao"
+                    style="@style/text_style"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="淘宝轮播"
+                    android:textSize="@dimen/textsize_20"/>
+
             </LinearLayout>
 
         </LinearLayout>

@@ -28,8 +28,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/id_simple_drawee_view1"
-            android:src="@mipmap/ic_launcher"/>
+            android:layout_toRightOf="@+id/id_simple_drawee_view1"/>
 
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/id_simple_drawee_view3"

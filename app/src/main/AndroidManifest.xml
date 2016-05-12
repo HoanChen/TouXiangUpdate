@@ -58,6 +58,8 @@
         <activity android:name=".activity.LifeAddActivity"/>
         <!--图片框架界面-->
         <activity android:name=".activity.PictureActivity"/>
+        <!--淘淘宝轮播图界面-->
+        <activity android:name=".activity.TaoBaoActivity"/>
 
     </application>
 

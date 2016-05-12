@@ -60,14 +60,26 @@ public class PictureActivity extends AppCompatActivity {
 
     private void initData() {
 
+//        类型	Scheme	示例
+//        远程图片	http://, https://	HttpURLConnection
+//        本地文件	file://	FileInputStream
+//        Content provider	content://	ContentResolver
+//        asset目录下的资源	asset://	AssetManager
+//        res目录下的资源	res://	Resources.openRawResource
+
 //        Uri uri = Uri.parse();
 //        mAvatorImg.setImageURI(uri);
         String url="http://t12.baidu.com/it/u=4095575894,102452705" +
                 "&fm=32&s=A98AA55F526172A6F6A058E50300A060&w=623&h=799&img.JPEG";
 
 //        http://img.huofar.com/data/jiankangrenwu/shizi.gif
-//        String urlgif="http://img0.bdstatic.com/img/image/shitu/feimg/uploading.gif";
-        Uri urlgif = Uri.parse("http://img.huofar.com/data/jiankangrenwu/shizi.gif");
+//        Uri urlgif = Uri.parse("http://img.huofar.com/data/jiankangrenwu/shizi.gif");
+        Uri urlgif = Uri.parse("res://com.tiqiuzhe.touxiangupdate/"+R.raw.gif);
+//        Uri urlgif = Uri.parse("http://schemas.android.com/apk/res-auto/"
+//                                       +"com.tiqiuzhe.touxiangupdate/"+R.raw.gif);
+//        Uri urlgif = Uri.parse("android.resource://" + getPackageName() + "/" +R.raw.gif);
+
+
         //显示一张HTTP图片
         mSimpleDraweeView.setImageURI(Uri.parse(url));
 
@@ -77,7 +89,6 @@ public class PictureActivity extends AppCompatActivity {
 
         //显示一张HTTP的GIF图片
         DraweeController draweeController = Fresco.newDraweeControllerBuilder()
-//                                                  .setUri(Uri.parse(urlgif))
                                                   .setUri(urlgif)
                                                   .setAutoPlayAnimations(true)
                                                   .build();
