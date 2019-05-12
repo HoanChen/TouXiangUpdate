@@ -5,6 +5,14 @@
     <dimen name="fab_margin">16dp</dimen>
 
 
-    <dimen name="textsize_20">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
     <dimen name="textsize_30">30sp</dimen>
+
+
+    <dimen name="margin_50">50dp</dimen>
+
+
+
+
+
 </resources>

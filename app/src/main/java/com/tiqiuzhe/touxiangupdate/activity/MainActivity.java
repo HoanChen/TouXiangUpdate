@@ -97,6 +97,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     ShimmerTextView tv_picture;
     @Bind(R.id.tv_taobao)
     ShimmerTextView tv_taobao;
+    @Bind(R.id.tv_daojishi)
+    ShimmerTextView tv_daojishi;
 
 
     private Shimmer s;
@@ -280,7 +282,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             R.id.tv_lunbotu,R.id.tv_yindaoye,R.id.tv_yindaoye1,R.id.et_change,
             R.id.tv_shuaxin,R.id. tv_dialog,R.id.tv_more_click,R.id.tv_explosion,
             R.id.tv_jingdong_shuaxin,R.id.tv_checkbox,R.id.tv_ios_wheel,
-            R.id.tv_multiple,R.id.tv_picture,R.id.tv_taobao})
+            R.id.tv_multiple,R.id.tv_picture,R.id.tv_taobao,R.id.tv_daojishi})
     public void onClick(View v) {
         switch (v.getId()) {
 
@@ -364,6 +366,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 break;
 
             case R.id.tv_taobao:
+                startActivity(new Intent(this, TaoBaoActivity.class));
+                break;
+            case R.id.tv_daojishi:
                 startActivity(new Intent(this, TaoBaoActivity.class));
                 break;
         }
