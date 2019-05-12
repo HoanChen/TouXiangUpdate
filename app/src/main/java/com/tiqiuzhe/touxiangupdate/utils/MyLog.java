@@ -10,8 +10,8 @@ import android.util.Log;
 
 public class MyLog {
 
-//    public static int LOG_LEVEL = 0;//上线模式
-    public static int LOG_LEVEL = 6;//开发模式
+    public static int LOG_LEVEL = 0;//上线模式
+//    public static int LOG_LEVEL = 6;//开发模式
     public static int ERROR = 1;
     public static int WARN = 2;
     public static int INFO = 3;
